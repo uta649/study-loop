@@ -1,2 +1,24 @@
-# study-loop
-A comprehensive study management app for planning, focusing, reviewing, and tracking academic progress toward university entrance exams.
+# STUDY LOOP ULTIMATE
+
+学習計画・集中タイマー・間隔反復・間違いノート・模試分析をまとめた、端末内保存型の学習管理PWAです。
+
+## GitHub Pagesで公開
+
+1. このリポジトリの **Settings → Pages** を開きます。
+2. **Build and deployment** で **Deploy from a branch** を選びます。
+3. Branchを **main**、Folderを **/(root)** にして **Save** を押します。
+4. 公開後、`https://uta649.github.io/study-loop/` を開きます。
+5. AndroidのChromeで開き、メニューから「アプリをインストール」または「ホーム画面に追加」を選びます。
+
+## 主な機能
+
+- 今日の学習記録・学習計画・集中タイマー
+- 間隔反復による復習管理
+- 間違いノート・知識ノート
+- 学習時間の分析・模試記録
+- スマホ利用の振り返り
+- JSONバックアップ・復元、CSV出力
+
+## データとプライバシー
+
+学習データは利用しているブラウザの端末内ストレージに保存します。アカウント間の同期はありません。設定画面からJSONバックアップを定期的に保存してください。公開リポジトリではアプリのソースコードが誰でも閲覧できます。学習記録や個人情報をリポジトリに入れないでください。

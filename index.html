@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#08152c">
+  <meta name="description" content="計画・集中・復習・分析を一つにまとめた、自分で学びを改善するための学習管理アプリ。">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="STUDY LOOP">
+  <link rel="icon" href="icons/study-loop.svg" sizes="48x48" type="image/png">
+  <link rel="apple-touch-icon" href="icons/study-loop.svg">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <title>STUDY LOOP — 学習を設計し、積み上げる。</title>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="STUDY LOOP ホーム">
+        <img src="icons/study-loop.svg" alt="" width="38" height="38">
+        <span><strong>STUDY LOOP</strong><small>PLAN · FOCUS · REVIEW · IMPROVE</small></span>
+      </a>
+      <div class="topbar-right">
+        <div class="today-pill" id="headerDate"></div>
+        <button class="icon-button" id="quickAddButton" type="button" title="学習を記録" aria-label="学習を記録">＋</button>
+      </div>
+    </header>
+
+    <nav class="main-nav" aria-label="メインメニュー">
+      <a href="#home" data-route="home" class="nav-link active"><span class="nav-icon">⌂</span>ホーム</a>
+      <a href="#plan" data-route="plan" class="nav-link"><span class="nav-icon">▦</span>学習計画</a>
+      <a href="#review" data-route="review" class="nav-link"><span class="nav-icon">↻</span>復習</a>
+      <a href="#analysis" data-route="analysis" class="nav-link"><span class="nav-icon">▥</span>分析</a>
+      <a href="#notes" data-route="notes" class="nav-link"><span class="nav-icon">▤</span>ノート</a>
+      <a href="#settings" data-route="settings" class="nav-link"><span class="nav-icon">⚙</span>設定</a>
+    </nav>
+
+    <div class="timer-strip hidden" id="timerStrip" aria-live="polite">
+      <span class="live-dot"></span><span id="timerStripLabel">集中セッション進行中</span><strong id="timerStripTime">25:00</strong>
+      <button class="btn btn-small btn-soft" data-action="go-home">タイマーへ</button>
+    </div>
+
+    <main id="appView" tabindex="-1"></main>
+
+    <footer class="app-footer">
+      <span><span class="save-dot"></span><span id="saveStatus">この端末に自動保存</span></span>
+      <span>学習データは端末内に保存されます。</span>
+    </footer>
+  </div>
+
+  <div class="toast-region" id="toastRegion" aria-live="polite" aria-atomic="true"></div>
+  <dialog class="app-dialog" id="appDialog">
+    <div class="dialog-head"><div><p class="eyebrow" id="dialogEyebrow">QUICK ACTION</p><h2 id="dialogTitle">学習を記録</h2></div><button class="icon-button" data-action="close-dialog" aria-label="閉じる">×</button></div>
+    <div id="dialogBody"></div>
+  </dialog>
+  <input type="file" id="importInput" accept="application/json,.json" hidden>
+  <script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "id": "./",
+  "name": "STUDY LOOP — 学習を設計し、積み上げる",
+  "short_name": "STUDY LOOP",
+  "description": "学習計画・集中タイマー・間隔反復・間違いノート・模試分析を一つにまとめた学習管理アプリ。",
+  "lang": "ja",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#071225",
+  "theme_color": "#08152c",
+  "categories": ["education", "productivity"],
+  "icons": [
+    {"src":"icons/study-loop.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}
