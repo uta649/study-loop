@@ -1,0 +1,10 @@
+STUDY LOOP ULTIMATE 2.0 更新手順
+
+1. ZIPを展開する。
+2. 中身すべてを既存の study-loop リポジトリの最上位へアップロードする。
+3. 既存ファイルを上書きし、iconsフォルダを含める。ZIP自体はアップロードしない。
+4. Commit changesを押す。
+5. GitHub Pagesの設定は通常そのままでよい。
+6. https://uta649.github.io/study-loop/ を開き直す。古いキャッシュが残る場合はChromeで再読み込みし、アプリを完全に閉じて開き直す。
+
+アップロード前に設定画面からJSONバックアップを保存してください。
